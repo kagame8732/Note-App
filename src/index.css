@@ -29,19 +29,17 @@ code {
 }
 
 .note.new {
-  background-color:peachpuff;
-
+  background-color: peachpuff;
 }
 
 textarea {
   border: none;
   resize: none;
-  background-color:peachpuff;
+  background-color: peachpuff;
 }
 
 textarea:focus {
   outline: none;
-
 }
 
 .add {
@@ -84,9 +82,8 @@ textarea:focus {
   border-radius: 10px;
   padding: 5px;
   margin-bottom: 1.5em;
-  background-color:rgb(208, 219, 144);
-
-} 
+  background-color: rgb(208, 219, 144);
+}
 
 .search input {
   border: none;
@@ -96,7 +93,7 @@ textarea:focus {
 .search input:focus {
   outline: none;
 }
- h1 {
-   color: white;
-   font-size: 30px;
- }
+h1 {
+  color: white;
+  font-size: 30px;
+}

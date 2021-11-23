@@ -11,12 +11,7 @@ const App = () => {
     text: "This is First Note",
     date: "14/03/2021",
   },
-  {
-    id: nanoid(),
-    text: "This is Second Note",
-    date: "20/04/2021",
-  },
-
+ 
   ])
 
   const [searchText, setSearchText] = useState('');
