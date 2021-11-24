@@ -11,7 +11,7 @@ const App = () => {
     text: "This is First Note",
     date: "14/03/2021",
   },
- 
+
   ])
 
   const [searchText, setSearchText] = useState('');
