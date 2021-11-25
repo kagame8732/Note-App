@@ -13,6 +13,35 @@ code {
     monospace;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode h1 {
+  color: #ffff;
+}
+
+.save {
+  background-color: #41799b;
+  height: 2em;
+  width: 5em;
+  color: white;
+  border-radius: 2em;
+  cursor: pointer;
+  border: none;
+}
+
+.save:hover {
+  background-color: #77aaac;
+  cursor: pointer;
+}
+
 .container {
   max-width: 960px;
   margin-right: auto;
@@ -43,6 +72,14 @@ textarea:focus {
 }
 
 .add {
+  background-color: #41799b;
+  height: 2em;
+  width: 5em;
+  color: white;
+  border-radius: 2em;
+  cursor: pointer;
+  border: none;
+
   background-color: #41799b;
   border: none;
   border-radius: 15px;
