@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  notebook:
+    image: notebook
+    ports:
+      - "8000:80"
+    networks:
+      - notebook-network
+    restart: always
+    
+networks:
+  notebook-network:
+    external: false
