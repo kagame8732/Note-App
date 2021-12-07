@@ -27,6 +27,17 @@ code {
   color: #ffff;
 }
 
+.title {
+  border-radius: 5px;
+  outline: none;
+  height: 20px;
+  width: 100%;
+}
+
+#title {
+  font-size: 1.5rem;
+}
+
 .save {
   background-color: #41799b;
   height: 2em;

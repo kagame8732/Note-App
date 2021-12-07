@@ -8,38 +8,50 @@ const App = () => {
 
   const [notes, setNotes] = useState([{
     id: nanoid(),
+    title: "Personal note",
     text: "This is First Note",
     date: "14/03/2021",
   },
   ])
+
   const [searchText, setSearchText] = useState('');
+
   const [darkMode, setDarkMode] = useState("false");
+
   useEffect(() => {
     const savedNotes = JSON.parse(localStorage.getItem('react-notes-app-data'));
     if (savedNotes) {
       setNotes(savedNotes)
     }
   }, []);
+
+
   useEffect(() => {
     localStorage.setItem('react-notes-app-data', JSON.stringify(notes));
   }, [notes]);
 
-  const addNote = (text) => {
+
+  const addNote = (title, text) => {
 
     const date = new Date();
 
     const newNote = {
       id: nanoid(),
+      title: title,
       text: text,
       date: date.toLocaleDateString(),
     }
+
     const newNotes = [...notes, newNote];
     setNotes(newNotes);
   }
+
+
   const deleteNote = (id) => {
     const newNotes = notes.filter((note) => note.id !== id)
     setNotes(newNotes)
   }
+
   return <div className={`${darkMode && 'dark-mode'}`}>
     <div className="container">
       <Header handleDarkMode={setDarkMode} />
