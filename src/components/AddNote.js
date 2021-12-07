@@ -9,6 +9,12 @@ const AddNote = ({ handleAddNote }) => {
 
     }
 
+    const [noteCategory, setNoteCategory] = useState('');
+    const handleCategory = (e) => {
+        setNoteCategory(e.target.value)
+
+    }
+
     const [noteText, setNoteText] = useState('');
     // const characterlimit = 200
 
@@ -18,22 +24,29 @@ const AddNote = ({ handleAddNote }) => {
 
         // }
     }
+
     const handleAddClick = () => {
+        // e.preventDefault()
         if (noteText.trim().length > 0) {
-            handleAddNote(noteTitle, noteText)
+            handleAddNote(noteTitle, noteCategory, noteText)
             setNoteText('')
+
+
+
+
         } else {
-            alert("Please add required data")
+            alert("Please Add something")
         }
     }
 
 
-
-
-
     return <div className="note new">
+        {/* <form onSubmit={handleAddClick}> */}
         <label for="title" id="title">TITLE:</label>
-        <input type="title" className="title" value={noteTitle} onChange={handleTitle} required />
+        <input type="title" className="title" value={noteTitle} onChange={handleTitle} placeholder="Add Title" required />
+
+        <label for="category" id="category">CATEGORY:</label>
+        <input type="category" className="category" value={noteCategory} onChange={handleCategory} placeholder="Add Category" required />
 
 
         <textarea rows="8" cols="10" placeholder="Please Add note here....."
@@ -41,6 +54,8 @@ const AddNote = ({ handleAddNote }) => {
         <div className="note-footer">
             <button className="add" onClick={handleAddClick}>Add</button>
         </div>
+        {/* </form> */}
+
     </div >
 }
 

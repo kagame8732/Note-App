@@ -1,8 +1,9 @@
 import { MdDeleteForever } from "react-icons/md";
 
-const Note = ({ id, title, text, date, handleDeleteNote }) => {
+const Note = ({ id, title, category, text, date, handleDeleteNote }) => {
     return <div className="note">
         <h2>{title}</h2>
+        <h3>{category}</h3>
         <span>{text}</span>
 
 

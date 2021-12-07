@@ -8,7 +8,8 @@ const App = () => {
 
   const [notes, setNotes] = useState([{
     id: nanoid(),
-    title: "Personal note",
+    title: "Note",
+    category: "Personal note",
     text: "This is First Note",
     date: "14/03/2021",
   },
@@ -31,13 +32,14 @@ const App = () => {
   }, [notes]);
 
 
-  const addNote = (title, text) => {
+  const addNote = (title, category, text) => {
 
     const date = new Date();
 
     const newNote = {
       id: nanoid(),
       title: title,
+      category: category,
       text: text,
       date: date.toLocaleDateString(),
     }

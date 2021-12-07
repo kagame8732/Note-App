@@ -27,14 +27,16 @@ code {
   color: #ffff;
 }
 
-.title {
+.title,
+.category {
   border-radius: 5px;
   outline: none;
   height: 20px;
   width: 100%;
 }
 
-#title {
+#title,
+#category {
   font-size: 1.5rem;
 }
 
