@@ -29,32 +29,20 @@ code {
 
 .title,
 .category {
-  border-radius: 5px;
   outline: none;
-  height: 20px;
+  height: 35px;
   width: 100%;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+  background-color: #f0f8fc;
+  margin-bottom: 3px;
 }
 
 #title,
 #category {
   font-size: 1.5rem;
 }
-
-.save {
-  background-color: #41799b;
-  height: 2em;
-  width: 5em;
-  color: white;
-  border-radius: 2em;
-  cursor: pointer;
-  border: none;
-}
-
-.save:hover {
-  background-color: #77aaac;
-  cursor: pointer;
-}
-
 .container {
   max-width: 960px;
   margin-right: auto;
@@ -71,13 +59,15 @@ code {
 }
 
 .note.new {
-  background-color: #f0f8fc;
+  background-color: #ffffff;
+  /* padding: 5px; */
 }
 
 textarea {
   border: none;
   resize: none;
   background-color: #f0f8fc;
+  width: 100%;
 }
 
 textarea:focus {
@@ -91,10 +81,6 @@ textarea:focus {
   color: white;
   border-radius: 2em;
   cursor: pointer;
-  border: none;
-
-  background-color: #41799b;
-  border: none;
   border-radius: 15px;
   padding: 5px 10px 5px 10px;
   color: #ffff;
@@ -107,7 +93,6 @@ textarea:focus {
 
 .note {
   background-color: #ffff;
-
   margin-bottom: 10px;
   border-radius: 10px;
   padding: 1rem;
@@ -116,6 +101,7 @@ textarea:focus {
   flex-direction: column;
   justify-content: space-between;
   white-space: pre-wrap;
+  /* width: 100%; */
 }
 
 .note-footer {
