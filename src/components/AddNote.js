@@ -8,6 +8,14 @@ const AddNote = ({ handleAddNote }) => {
         setNoteTitle(e.target.value)
     }
 
+    // var alphaExp = /^[a-zA-Z]+$/;
+    // if (.match(alphaExp)) {
+    //     setNoteTitle()
+    // }
+    // else {
+    //     alert("Please enter only alphabets");
+    // }
+
     const [noteCategory, setNoteCategory] = useState('');
     const handleCategory = (e) => {
         setNoteCategory(e.target.value)
@@ -32,9 +40,9 @@ const AddNote = ({ handleAddNote }) => {
     }
     return <div className="note new">
         <label for="title" id="title">TITLE:</label>
-        <input type="title" className="title" value={noteTitle} onChange={handleTitle} placeholder="Add Title" required />
+        <input type="text" id="title" className="title" value={noteTitle} onChange={handleTitle} placeholder="Add Title" required />
         <label for="category" id="category">CATEGORY:</label>
-        <input type="category" className="category" value={noteCategory} onChange={handleCategory} placeholder="Add Category" required />
+        <input type="text" className="category" value={noteCategory} onChange={handleCategory} placeholder="Add Category" required />
         <textarea rows="8" cols="10" placeholder="Please Add note here....."
             value={noteText} onChange={handleChange}></textarea>
         <div className="note-footer">
