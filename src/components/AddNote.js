@@ -8,15 +8,9 @@ const AddNote = ({ handleAddNote }) => {
         setNoteTitle(e.target.value)
     }
 
-    // var alphaExp = /^[a-zA-Z]+$/;
-    // if (.match(alphaExp)) {
-    //     setNoteTitle()
-    // }
-    // else {
-    //     alert("Please enter only alphabets");
-    // }
 
     const [noteCategory, setNoteCategory] = useState('');
+    
     const handleCategory = (e) => {
         setNoteCategory(e.target.value)
     }
