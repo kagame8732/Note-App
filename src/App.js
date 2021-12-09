@@ -54,6 +54,8 @@ const App = () => {
     setNotes(newNotes)
   }
 
+
+
   return <div className={`${darkMode && 'dark-mode'}`}>
     <div className="container">
       <Header handleDarkMode={setDarkMode} />
