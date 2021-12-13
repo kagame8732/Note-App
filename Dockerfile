@@ -2,7 +2,6 @@ FROM node:17-alpine3.12 as build
 RUN mkdir -p /app
 WORKDIR /app
 COPY package*.json ./
-# ENV PATH="./node_modules/.bin:$PATH"
 RUN npm ci
 COPY . ./
 ENV NODE_OPTIONS=--openssl-legacy-provider
