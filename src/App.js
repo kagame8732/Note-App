@@ -41,26 +41,27 @@ const App = () => {
       title: title,
       category: category,
       text: text,
-      date: date.toLocaleDateString(),
+      date: date.toLocaleDateString("en-GB", {
+        hour: "2-digit",
+        minute: "2-digit",
+        second: "2-digit",
+      }),
     }
 
     const newNotes = [...notes, newNote];
     setNotes(newNotes);
   }
 
-
   const deleteNote = (id) => {
     const newNotes = notes.filter((note) => note.id !== id)
     setNotes(newNotes)
   }
 
-
-
   return <div className={`${darkMode && 'dark-mode'}`}>
     <div className="container">
       <Header handleDarkMode={setDarkMode} />
       <Search handleSearchNote={setSearchText} />
-      <NotesList notes={notes.filter((note) => note.text.toLowerCase().includes(searchText))}
+      <NotesList notes={notes.filter((note) => note.title.toLowerCase().includes(searchText))}
         handleAddNote={addNote}
         handleDeleteNote={deleteNote}
       />

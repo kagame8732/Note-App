@@ -34,10 +34,10 @@ const AddNote = ({ handleAddNote }) => {
     }
     return <form id="form1">
         <div className="note new">
-            <label for="title" id="title">TITLE:</label>
-            <input name="txt1" type="text" id="title" className="title" value={noteTitle} onChange={handleTitle} placeholder="Add Title" required />
-            <label name="txt2" for="category" id="category">CATEGORY:</label>
-            <input type="text" className="category" value={noteCategory} onChange={handleCategory} placeholder="Add Category" required />
+            <label htmlFor="title" id="title">TITLE:</label>
+            <input name="txt1" type="text" id="title" className="title" value={noteTitle} onChange={handleTitle} placeholder="Add Title" required="required" autoFocus />
+            <label htmlFor="category" name="txt2" for="category" id="category">CATEGORY:</label>
+            <input type="text" className="category" value={noteCategory} onChange={handleCategory} placeholder="Add Category" required="required" />
             <textarea rows="8" cols="10" placeholder="Please Add note here....."
                 value={noteText} onChange={handleChange}></textarea>
             <div className="note-footer">
