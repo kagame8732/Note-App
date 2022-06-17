@@ -17,7 +17,10 @@ const NotesList = ({ notes, handleAddNote, handleDeleteNote }) => {
                 handleDeleteNote={handleDeleteNote}
             />
             )}
+<<<<<<< HEAD
 
+=======
+>>>>>>> aa4976de5b27db25d173f2d5cc8b57db74487156
         </div>
     )
 }
