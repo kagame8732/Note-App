@@ -3,7 +3,7 @@ import React from "react";
 const Header = ({ handleDarkMode }) => {
   return (
     <div className="header">
-      <h1>Note App</h1>
+      <h1>Notes App</h1>
       <a
         href="#"
         className="save"
