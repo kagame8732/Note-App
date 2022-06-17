@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #425f75;
+  background-color: #6d6d7e;
 }
 
 code {
@@ -134,20 +134,35 @@ textarea:focus {
   outline: none;
 }
 h1 {
-  color: #ffff;
-  font-size: 30px;
+  font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transition: all .2s;
+  
 }
 
 .save{
-  width: 6rem;
-  height: 2rem;
-  background-color: rgb(182, 197, 155);
-  color:black;
-  font-size: 1.5rem;
-  border: none;
+  color: #55c57a;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #55c57a;
+    padding: 3px;
+    font-size: 1.6rem;
+    transition: all .2s;
+    width: 6rem;
+      height: 2rem;
+}
+.save:hover{
+  background-color: #55c57a;
+    color: #fff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
   border-radius: .3rem;
-  cursor: pointer;
-
-
+  
 }
 
